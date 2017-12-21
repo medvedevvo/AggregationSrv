@@ -10,11 +10,6 @@ dist: trusty
 notifications:
   email: false
   
-install:
-  - apt-get update && apt-get install -y curl && apt-get clean
-  - dnvm upgrade
-  - dnu restore
-  
 jobs:
   include:
   - stage: build
