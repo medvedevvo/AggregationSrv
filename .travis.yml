@@ -10,8 +10,6 @@ dist: trusty
 notifications:
   email: false
 
-install:
-  - nget restore ./AggregationService/AggregationService.sln
  
 jobs:
   include:
