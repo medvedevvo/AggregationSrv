@@ -1,6 +1,6 @@
 language: csharp
 solution: "./AggregationService/AggregationService.sln"
-mono: none
+mono: latest
 dotnet: 2.0.0
 build: trusty
 sudo: required
