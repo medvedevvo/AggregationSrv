@@ -11,7 +11,7 @@ notifications:
   email: false
 
 install:
-  - nuget restore ./AggregationService/AggregationService.sln
+  - nget restore ./AggregationService/AggregationService.sln
  
 jobs:
   include:
