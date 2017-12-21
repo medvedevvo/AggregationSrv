@@ -1,6 +1,6 @@
 language: csharp
 solution: "./AggregationService/AggregationService.sln"
-mono: none
+mono: latest
 dotnet: 2.0.0
 script:
  - dotnet restore
@@ -9,8 +9,14 @@ sudo: required
 dist: trusty
 notifications:
   email: false
-
- 
+  
+install:
+  - curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_BRANCH=dev sh && source ~/.dnx/dnvm/dnvm.sh
+  - dnvm upgrade
+  - dnu restore
+script:
+  - dnx -p ./test/[testProjectName]/project.json test -parallel none
+  
 jobs:
   include:
   - stage: build
