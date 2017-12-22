@@ -16,11 +16,11 @@ namespace AggregationService.Controllers
     {
         private DriversContext db = new DriversContext();
 
-        public UserController()
-        {
-            db.Users.Add(new User { Surname = "Иванов", Name = "Иван", Patronymic = "Иванович", Id = 1 });
-            db.Users.Add(new User { Surname = "Петров", Name = "Петр", Patronymic = "Петрович", Id = 2 });
-        }
+        //public UserController()
+        //{
+        //    db.Users.Add(new User { Surname = "Иванов", Name = "Иван", Patronymic = "Иванович", Id = 1 });
+        //    db.Users.Add(new User { Surname = "Петров", Name = "Петр", Patronymic = "Петрович", Id = 2 });
+        //}
 
         // GET api/User
         public IQueryable<User> GetUsers()
