@@ -1,1 +1,1 @@
-# РСОИ. AggregationService (c) Медведев В.О.
+# РСОИ. AggregationService (c) Медведев В.О. 
